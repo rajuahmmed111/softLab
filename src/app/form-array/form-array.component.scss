@@ -1,0 +1,100 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.spec-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.spec-row {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.spec-input {
+  flex: 1;
+}
+
+.spec-input label {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 3px;
+}
+
+.spec-input input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.delete-btn {
+  background-color: rgb(212, 3, 3);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.create-submit-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-spec-btn {
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 20px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.submit-btn {
+  background-color: rgb(45, 35, 181);
+}
+
+.add-spec-btn span {
+  font-size: 24px;
+}
+
+.submit-showTable{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+// .alert {
+//   padding: 15px;
+//   margin: 10px 0;
+//   border-radius: 4px;
+//   text-align: center;
+// }
+
+// .alert-success {
+//   background-color: #4caf50;
+//   color: white;
+// }
+
+// .alert-error {
+//   background-color: #f44336;
+//   color: white;
+// }

@@ -1,0 +1,192 @@
+<!-- <div class="container">
+  <form [formGroup]="specForm" (ngSubmit)="submitForm()">
+    <div formArrayName="specifications">
+      <div
+        *ngFor="let spec of specifications.controls; let i = index"
+        [formGroupName]="i"
+        class="spec-row"
+      >
+        <div class="spec-input">
+          <label for="name1">Name</label>
+          <input type="text" id="name1" value="206" />
+        </div>
+        <div class="spec-input">
+          <label for="value1">Value</label>
+          <input type="text" id="value1" value="25" />
+        </div>
+        <button (click)="removeSpecification(i)" class="delete-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="white"
+          >
+            <path
+              d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="create-submit-div">
+      <button type="button" (click)="addSpecification()" class="add-spec-btn">
+        <span>+</span> Create New Specification
+      </button>
+
+      <button type="submit" class="add-spec-btn submit-btn">Submit</button>
+    </div>
+  </form>
+
+
+  <div *ngIf="savedSpecifications && savedSpecifications.length">
+    <h3>Saved Specifications</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let spec of savedSpecifications">
+          <td>{{ spec.name }}</td>
+          <td>{{ spec.value }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div> -->
+
+<!-- <div class="container">
+  <form [formGroup]="specForm" (ngSubmit)="submitForm()">
+    <div formArrayName="specifications">
+      <div
+        *ngFor="let spec of specifications.controls; let i = index"
+        [formGroupName]="i"
+        class="spec-row"
+      >
+        <div class="spec-input">
+          <label for="name1">Name</label>
+          <input type="text" formControlName="name" />
+        </div>
+        <div class="spec-input">
+          <label for="value1">Value</label>
+          <input type="text" formControlName="value" />
+        </div>
+        <button (click)="removeSpecification(i)" class="delete-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="white"
+          >
+            <path
+              d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="create-submit-div">
+      <button (click)="addSpecification()" class="add-spec-btn">
+        <span>+</span> Create New Specification
+      </button>
+
+      <div class="submit-showTable">
+        <button type="submit" class="add-spec-btn submit-btn">Submit</button>
+        <button type="button" class="add-spec-btn submit-btn">
+          Show Table
+        </button>
+      </div>
+    </div>
+  </form>
+
+  <div *ngIf="savedSpecifications && savedSpecifications.length">
+    <h3>Saved Specifications</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let spec of savedSpecifications">
+          <td>{{ spec.name }}</td>
+          <td>{{ spec.value }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div> -->
+
+
+<div class="container">
+  <form [formGroup]="specForm" (ngSubmit)="submitForm()">
+    <div formArrayName="specifications">
+      <div
+        *ngFor="let spec of specifications.controls; let i = index"
+        [formGroupName]="i"
+        class="spec-row"
+      >
+        <div class="spec-input">
+          <label for="name1">Name</label>
+          <input type="text" formControlName="name" />
+        </div>
+        <div class="spec-input">
+          <label for="value1">Value</label>
+          <input type="text" formControlName="value" />
+        </div>
+        <button (click)="removeSpecification(i)" class="delete-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="white"
+          >
+            <path
+              d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="create-submit-div">
+      <button (click)="addSpecification()" class="add-spec-btn">
+        <span>+</span> Create New Specification
+      </button>
+
+      <div class="submit-showTable">
+        <button (click)="showSpecifications()" type="button" class="add-spec-btn submit-btn">
+          Show Table
+        </button>
+        <button type="submit" class="add-spec-btn submit-btn">Submit</button>
+      </div>
+    </div>
+  </form>
+
+  <!-- Specification Table -->
+  <div *ngIf="displayTable && savedSpecifications.length">
+    <h3>Saved Specifications</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let spec of savedSpecifications">
+          <td>{{ spec.name }}</td>
+          <td>{{ spec.value }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
