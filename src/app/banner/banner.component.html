@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="banner-container">
+    <div *ngFor="let banner of banners" class="banner">
+      <img [src]="banner.image" alt="{{ banner.title }}" class="banner-img" />
+      <div class="banner-content">
+        <p class="title">{{ banner.title }}...</p >
+        <p class="des">{{ banner.description }}</p>
+      </div>
+    </div>
+  </div>
+</div>
