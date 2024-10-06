@@ -7,9 +7,12 @@ import { FormArrayComponent } from './form-array/form-array.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BannerComponent } from './banner/banner.component';
+import { VideoPlaySectionComponent } from './video-play-section/video-play-section.component';
+import { CommentComponent } from './comment/comment.component';
+import { WarningComponent } from './warning/warning.component';
 
 @NgModule({
-  declarations: [AppComponent, FormArrayComponent, BannerComponent],
+  declarations: [AppComponent, FormArrayComponent, BannerComponent, VideoPlaySectionComponent, CommentComponent, WarningComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

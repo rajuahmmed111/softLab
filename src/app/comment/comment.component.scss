@@ -1,0 +1,71 @@
+.alert-box {
+  background-color: #f8edea;
+  border: 2px solid #f9d4d8;
+  border-radius: 15px;
+  max-width: 700px;
+  width: 100%;
+  margin: 120px auto;
+  padding: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Rubik", sans-serif;
+
+  .alert-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .icon-text {
+      display: flex;
+
+      .icon {
+        margin-right: 15px;
+      }
+
+      .text {
+        h3 {
+          font-size: 20px;
+          color: #171719;
+          font-weight: 500;
+          margin-bottom: 5px;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+
+  .btn-div {
+    display: flex;
+    justify-content: end;
+    margin: 25px 0 5px 0;
+    .payment-btn {
+      background-color: #28a745;
+      color: #fff;
+      width: 23%;
+      padding: 7px 22px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-left: 8px;
+      }
+    }
+  }
+}
+
+@media (max-width: 8360px) {
+  .alert-box {
+    width: 85%;
+    padding: 10px;
+  }
+  .btn-div {
+    .payment-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80% !important;
+    }
+  }
+}

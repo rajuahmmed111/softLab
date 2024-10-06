@@ -1,0 +1,126 @@
+.dashboard-section {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #171719;
+    margin: 30px 0 0 60px;
+  }
+  .dashboard {
+    max-width: 800px;
+    width: 100%;
+    margin: 30px auto;
+    padding: 0 15px;
+    font-family: Arial, sans-serif;
+
+    .alert {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+
+      .icon-text {
+        display: flex;
+        align-items: center;
+
+        .icon {
+          margin-right: 15px;
+        }
+
+        .text {
+          align-items: center;
+          h3 {
+            font-size: 17px;
+            text-align: justify;
+            color: #171719;
+            font-weight: 500;
+            margin: 7px 0 5px 0;
+            line-height: 20px;
+          }
+          p {
+            font-size: 13px;
+          }
+        }
+      }
+
+      .action-danger {
+        color: #ef3346;
+        border-bottom: 2px solid #ef3346;
+        line-height: 15px;
+      }
+
+      .action-warning {
+        color: #fdc00b;
+        border-bottom: 2px solid #fdc00b;
+        line-height: 15px;
+      }
+
+      .action-info {
+        color: #2575f5;
+        border-bottom: 2px solid #2575f5;
+        line-height: 15px;
+      }
+
+      .action-success {
+        color: #12c43f;
+        border-bottom: 2px solid #12c43f;
+        line-height: 15px;
+      }
+
+      .close-icon-text {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        span svg {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .alert-danger {
+      background-color: #f8edea;
+      border: 2px solid #eac4c8;
+    }
+    .alert-warning {
+      background-color: #fcf6e1;
+      border: 2px solid #ffe188;
+    }
+    .alert-info {
+      background-color: #dfe9f9;
+      border: 2px solid #99bffc;
+    }
+    .alert-success {
+      background-color: #e5f8ea;
+      border: 2px solid #a7f8bb;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    width: 95% !important;
+  }
+  .title {
+    text-align: center;
+    font-size: 30px !important;
+  }
+}
+@media (max-width: 360px) {
+  .dashboard {
+    width: 90% !important;
+  }
+
+  .alert {
+    gap: 10px;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 30px !important;
+  }
+}
